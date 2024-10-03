@@ -4,13 +4,13 @@
  * Created on: Oct 3 2024
  * This program runs RGB lights 
 */
-    //seting up my mcrobit
-basic.clearScreen()
-basic.showIcon(IconNames.Happy)
-input.onButtonPressed(Button.A, function () {
-pins.digitalWritePin(DigitalPin.P13, 0)
-pins.digitalWritePin(DigitalPin.P14, 0)
-pins.digitalWritePin(DigitalPin.P15, 0)
+    //seting up my mcrobit and RGB LED
+    basic.clearScreen()
+    basic.showIcon(IconNames.Happy)
+    input.onButtonPressed(Button.A, function () {
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
 
     // red LED
    pins.digitalWritePin(DigitalPin.P13,1)
