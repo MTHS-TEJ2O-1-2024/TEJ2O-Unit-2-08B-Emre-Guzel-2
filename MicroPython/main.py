@@ -1,15 +1,15 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
+Created by: Emre Guzel
+Created on: Oct4 2024
 This module is a Micro:bit MicroPython program runs RGB lights 
 """
 
 from microbit import *
 
-# setting the microbit
-display.clear()
 # setting the colors
 if button_a.get_presses():
+    display.clear()
+    display.show(Image.HAPPY)
     pin13.write_digital(0)
     pin14.write_digital(0)
     pin15.write_digital(0)
@@ -27,4 +27,19 @@ if button_a.get_presses():
     # green light
     pin13.write_analog(0)
     pin14.write_digital(0)
+    pin15.write_digital(1)
+
+    # purple
+    pin13.write_analog(1)
+    pin14.write_digital(1)
+    pin15.write_digital(0)
+
+    # light blue
+    pin13.write_analog(0)
+    pin14.write_digital(1)
+    pin15.write_digital(1)
+
+    # white
+    pin13.write_analog(1)
+    pin14.write_digital(1)
     pin15.write_digital(1)
