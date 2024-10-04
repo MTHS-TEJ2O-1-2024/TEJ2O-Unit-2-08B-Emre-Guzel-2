@@ -7,7 +7,7 @@ This module is a Micro:bit MicroPython program runs RGB lights
 from microbit import *
 
 # setting the colors
-if button_a.get_presses():
+if button_a.is_pressed():
     display.clear()
     display.show(Image.HAPPY)
     pin13.write_digital(0)
